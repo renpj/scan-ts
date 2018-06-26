@@ -1,5 +1,5 @@
 from math import sqrt
-from ase.utils.geometry import find_mic
+from ase.geometry import find_mic
 
 import numpy as np
 
@@ -17,9 +17,9 @@ def dict2constraint(dct):
             
 def slice2enlist(s, n):
     """Convert a slice object into a list of (new, old) tuples."""
-    if isinstance(s, (list, tuple)):
-        return enumerate(s)
-    return enumerate(range(*s.indices(n)))
+    if isinstance(s, slice):
+        return enumerate(range(*s.indices(n)))
+    return enumerate(s)
 
 
 class FixConstraint:
