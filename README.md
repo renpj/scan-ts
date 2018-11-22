@@ -1,7 +1,15 @@
 This Program is forked from https://github.com/pplessow/scan-ts
 
--Constraint class stretchcombo for linear combinations of bond length to use with the ASE. 
--Class arpess for performing transition state optimizations through Automated Relaxed Potential Energy Surface Scans (ARPESS).
+- Constraint class stretchcombo for linear combinations of bond length to use with the ASE. 
+- Class arpess for performing transition state optimizations through Automated Relaxed Potential Energy Surface Scans (ARPESS).
+
+## Install
+* Pre-requirement
+    * ASE
+    * matplotlib (optional, for plot in example)
+* run `python setup.py develop` to get the code installed
+
+## Usage
 
 For usage see the provided examples.
 In these examples, stretchcombo is imported from ase.constraints and arpess from ase.optimize.arpess. 
