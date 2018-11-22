@@ -3,7 +3,7 @@ from ase.io import *
 from ase import Atoms
 from ase.optimize import BFGS
 from ase.constraints import FixAtoms
-from ase.constraints import stretchcombo
+from scan_ts import stretchcombo
 from ase.calculators.emt import EMT
 import numpy as np
 
@@ -43,7 +43,7 @@ f=open('scan.txt','w')
 for x,y in zip(xx,yy):
   f.write(str(x)+' '+str(y)+'\n')
 f.close()
-print 'max at',xx[np.argsort(yy)[-1]],yy[np.argsort(yy)[-1]]
+print('max at',xx[np.argsort(yy)[-1]],yy[np.argsort(yy)[-1]])
 
 import matplotlib
 matplotlib.use('Agg')

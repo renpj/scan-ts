@@ -1,6 +1,6 @@
 #! /usr/bin/env python
-from ase.constraints import stretchcombo
-from ase.optimize.arpess import arpess
+from scan_ts import stretchcombo
+from scan_ts import arpess
 from ase.io import read
 import ase.calculators.vasp as vasp_calculator
 
@@ -28,7 +28,7 @@ calc = vasp_calculator.Vasp(encut=400,
                         ivdw=11,
                         gga='PE',
                         kpts  = (1,1,1),
-                        ncore=4,
+                        ncore=2,
                         gamma = True,
                         ismear=0,
                         nelm=250,

@@ -2,9 +2,9 @@
 from ase.io import write
 from ase import Atoms
 from ase.calculators.emt import EMT
-from ase.constraints import stretchcombo
+from scan_ts import stretchcombo
 from ase.constraints import FixAtoms
-from ase.optimize.arpess import arpess
+from scan_ts import arpess
 
 
 calc = EMT()
