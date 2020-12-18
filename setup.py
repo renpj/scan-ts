@@ -25,6 +25,11 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-    ], 
-    install_requires=['ase']
+        'Programming Language :: Python :: 3.7',
+    ],
+    install_requires=[
+        'ase',
+        'matplotlib',
+        'numpy',
+    ]
 )
