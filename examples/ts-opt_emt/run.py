@@ -1,5 +1,3 @@
-#! /usr/bin/env python
-from ase.io import write
 from ase import Atoms
 from ase.calculators.emt import EMT
 from scan_ts import stretchcombo

@@ -7,12 +7,11 @@ This Program is forked from https://github.com/pplessow/scan-ts
 * Pre-requirement
     * ASE
     * matplotlib (optional, for plot in example)
-* run `python setup.py develop` to get the code installed
+* run `python setup.py develop` to get the code installed in develop mode.
 
 ## Usage
 
 For usage see the provided examples.
-In these examples, stretchcombo is imported from ase.constraints and arpess from ase.optimize.arpess. 
 
 Theory described in: 
 

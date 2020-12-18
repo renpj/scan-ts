@@ -1,4 +1,3 @@
-#! /usr/bin/env python
 from scan_ts import stretchcombo
 from scan_ts import arpess
 from ase.io import read
