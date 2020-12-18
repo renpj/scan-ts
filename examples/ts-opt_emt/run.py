@@ -8,7 +8,7 @@ from scan_ts import arpess
 
 calc = EMT()
 
-## made-up example to work with the EMT
+# made-up example to work with the EMT
 atoms = Atoms('H4', [(0, 0, 0), (3, 0, 0), (2, 0, 0), (4, 0, 0)])
 atoms.set_constraint([FixAtoms([0, 1])])
 atoms.write('initial.xyz')

@@ -16,14 +16,14 @@ class scan_bfgs(BFGS):
 
     def converged(self, forces=None):
         """Did the optimization converge?"""
+        if forces is None:
+            forces = self.atoms.get_forces()
+        fmax_current = np.sqrt((forces ** 2).sum(axis=1).max())
+
         fmax_full = max(
             [np.linalg.norm(f_1 + f_2) for f_1, f_2 in zip(forces, self.scanned_constraint.projected_forces)])
         pg = self.scanned_constraint.projected_force
         f_thresh = min(0.1, abs(self.fmax * self.scanned_constraint.f_thresh))
-
-        if forces is None:
-            forces = self.atoms.get_forces()
-        fmax_current = np.sqrt((forces ** 2).sum(axis=1).max())
 
         print('>>>>>> convergence-criterion is', f_thresh, 'based on proj. force', pg, 'f_cur=', fmax_current)
         if self.nsteps < 2:

@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-from ase.io import *
 from ase import Atoms
 from ase.optimize import BFGS
 from ase.constraints import FixAtoms
