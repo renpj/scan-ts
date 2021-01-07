@@ -114,7 +114,7 @@ class arpess(Optimizer):
                 sys.exit(1)
         print('do_cubic parameter is', do_cubic)
 
-    def run(self, fmax=0.01, steps=100000000):
+    def run(self, fmax=0.01, steps=1000):
         """Run structure optimization algorithm.
         *steps*."""
 
